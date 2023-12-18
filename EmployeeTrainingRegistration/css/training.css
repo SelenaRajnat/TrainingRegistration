@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #051a82;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 800px;
+        font-family: "Times New Roman", serif;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #051a82;
+        }
+
+        /* Create a right-aligned (split) link inside the navigation bar */
+        .topnav a.split {
+            float: right;
+            background-color: gray;
+            color: white;
+        }
+
+.card {
+    width: 450px; /* Set your desired width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.card-header {
+    background-color: #051a82; /* Set your desired background color */
+    color: #ffffff; /* Set your desired text color */
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    /* text-align:center; */
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #051a82; /* Set your desired button color */
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #051a82; /* Set your desire*/
+    }
+
+.split {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around; /* Adjust this based on your alignment preference */
+}
+
+.logoutButton {
+    background-color: white;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+}
+/* Custom styles for modal width and height */
+.custom-modal-dialog {
+    max-width: 80%; /* Adjust the width as needed */
+}
+
+.custom-modal-content {
+    width: 100%; /* Take full width of the modal-dialog */
+    height: 80vh; /* Adjust the height as needed */
+}

@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <title>Register Forms</title>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="~/css/main.css">
+    @*<link href="css/main.css" rel="stylesheet" media="all">*@
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Registration Form</h2>
+                </div>
+                <div class="card-body">
+                    <form id="validateRegisterForm" class="row g-3 needs-validation" onsubmit="return false;" novalidate>
+                        <div class="form-row m-b-55">
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomFirstName" class="form-label">First name</label>
+                                            <input class="input--style-5 form-control" type="text" name="FirstName" required>
+                                            <div class="invalid-feedback">Please enter your First Name.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomLastName" class="form-label">Last name</label>
+                                            <input class="input--style-5 form-control" type="text" name="LastName" required>
+                                            <div class="invalid-feedback">Please enter your Last Name.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomNIC" class="form-label">National Identity Number</label>
+                                            <input class="input--style-5 form-control" type="text" name="NationalIdentityNumber" required>
+                                            <div class="invalid-feedback">Please enter your National Identity Number.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomLastName" class="form-label">Phone Number</label>
+                                            <input class="input--style-5 form-control" type="text" name="PhoneNumber" required>
+                                            <div class="invalid-feedback">Please enter your PhoneNumber.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="validationCustomDepartment" class="form-label">Department</label>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select class="form-select" id="validationCustomDepartment" name="Department" required>
+                                            <option disabled="disabled" selected="selected" value="">Choose option</option>
+                                            <option value="1">Product and Technology</option>
+                                            <option value="2">Customer Support</option>
+                                            <option value="3">Human Resource</option>
+                                            <option value="4">Payroll</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your Department.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="validationCustomManagerName" class="form-label">Manager Name</label>
+                            <div class="value">
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select class="form-select" id="validationCustomManagerName" name="ManagerName" required>
+                                        <option disabled="disabled" selected="selected" value="">Choose option</option>
+                                        <option value="John">John</option>
+                                        <option value="Sam">Sam</option>
+                                        <option value="Adam">Adam</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select your Manager.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="validationCustomJobTitle" class="form-label">Job Title</label>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input type="text" class="input--style-5 form-control" id="validationCustomJobTitle" name="JobTitle" required>
+                                    <div class="invalid-feedback">Please enter a job title.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="validationCustomEmailAddress" class="form-label">Email Address</label>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input type="email" class="input--style-5 form-control" id="validationCustomEmailAddress" name="EmailAddress" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomNewPassword" class="form-label">New Password</label>
+                                            <input class="input--style-5 form-control" type="text" name="NewPassword" required>
+                                            <div class="invalid-feedback">Please enter your New Password.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <label for="validationCustomPassword" class="form-label">Confirm Password</label>
+                                            <input class="input--style-5" type="text" name="ConfirmPassword" required>
+                                            <div class="invalid-feedback">Please enter your Confirm Password.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/ValidateRegister.js"></script>
+
+</body>
+
+</html>
